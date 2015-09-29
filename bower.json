@@ -1,0 +1,19 @@
+{
+  "name": "Wellteam",
+  "version": "0.0.1",
+  "authors": [
+    "Viengo <viengooleg@gmail.com>"
+  ],
+  "description": "Wellteam test project",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
