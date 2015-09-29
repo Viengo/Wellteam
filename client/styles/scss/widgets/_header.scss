@@ -4,8 +4,43 @@ header {
 
         .logo {
             position: absolute;
-            top: 0;
+            z-index: 999;
+            top: 7px;
             left: 360px;
+        }
+
+        ul {
+            width: 100%;
+
+            li{
+//                display: inline-block;
+                border-top: 7px solid #fff;
+                a {
+                    display: block;
+                    font-size: 18px;
+                    line-height: 102px;
+                    text-transform: uppercase;
+                    color: #181818;
+                }
+                &:nth-child(-n+2) {
+                    float: left;
+                }
+                &:nth-child(n+3)  {
+                    float: right;
+                }
+                &:nth-child(2){
+                    margin-left:130px;
+                }
+                &:nth-child(4){
+                    margin-right:97px;
+                }
+                &.active {
+                    border-top: 7px solid #2a4168;
+                    a {
+                        color: #2a4168;
+                    }
+                }
+            }
         }
     }
 }

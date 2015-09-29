@@ -2,3 +2,11 @@
     width: 1000px;
     margin: 0 auto;
 }
+.clearfix {
+    @include clearfix;
+
+}
+a {
+    font-family: "Helvetica";
+    text-decoration: none;
+}
