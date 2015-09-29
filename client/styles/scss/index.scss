@@ -2,7 +2,7 @@
 @import "compass/reset";
 @import "compass/css3";
 @import "compass/utilities/sprites";
-@import "lib/bootstrap/bootstrap";
+@import "lib/carousel/carousel";
 
 @import "base";
 
@@ -14,9 +14,9 @@
 
 //mixins
 //@import "mixins/user-select";
-@import "mixins/clearfix";
 
 //components
+@import "components/button";
 
 
 //widgets

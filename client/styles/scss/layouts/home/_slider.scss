@@ -1,12 +1,27 @@
 .slider {
+    overflow: hidden;
+
     .slider-style {
         .info-box {
-            display: inline-block;
+            float: left;
             width: 500px;
+
+            h3 {
+                font-family: "Helvetica Bold";
+                font-size: 30px;
+                line-height: 30px;
+                text-transform: uppercase;
+                color: #fff;
+            }
+
+            .button {
+                margin-top: 20px;
+
+            }
         }
         .button-group {
-            display: inline-block;
-            width: 500px;
+            float: right;
+            width: 194px;
 
             .button {
                 &:last-of-type {

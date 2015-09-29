@@ -12,6 +12,7 @@ module.exports = function (grunt) {
             main: {
                 src: [
                 'bower_components/jquery/dist/jquery.min.js',
+                'client/js/transition.js',
                 'client/js/carousel.js',
                 'client/js/index.js'
                 ],

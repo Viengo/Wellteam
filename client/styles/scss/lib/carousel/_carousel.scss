@@ -1,0 +1,143 @@
+//
+// Carousel
+// --------------------------------------------------
+@import "mixins/clearfix";
+@import "mixins/vendor-prefixes";
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+
+  > .item {
+    display: none;
+    position: relative;
+    @include transition(.6s ease-in-out left);
+
+    // Account for jankitude on images
+    > img,
+    > a > img {
+        width: 100%;
+        min-width: 1000px;
+    }
+
+    // WebKit CSS3 transforms for supported devices
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      @include transition-transform(0.6s ease-in-out);
+      @include backface-visibility(hidden);
+      @include perspective(1000px);
+
+      &.next,
+      &.active.right {
+        @include translate3d(100%, 0, 0);
+        left: 0;
+      }
+      &.prev,
+      &.active.left {
+        @include translate3d(-100%, 0, 0);
+        left: 0;
+      }
+      &.next.left,
+      &.prev.right,
+      &.active {
+        @include translate3d(0, 0, 0);
+        left: 0;
+      }
+    }
+  }
+
+  > .active,
+  > .next,
+  > .prev {
+    display: block;
+  }
+
+  > .active {
+    left: 0;
+  }
+
+  > .next,
+  > .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  > .next {
+    left: 100%;
+  }
+  > .prev {
+    left: -100%;
+  }
+  > .next.left,
+  > .prev.right {
+    left: 0;
+  }
+
+  > .active.left {
+    left: -100%;
+  }
+  > .active.right {
+    left: 100%;
+  }
+
+}
+
+
+// Optional indicator pips
+//
+// Add an unordered list with the following class and add a list item for each
+// slide your carousel holds.
+.indicator-wrap {
+    position: absolute;
+    z-index: 15;
+    bottom: 23px;
+    left: 0;
+    width: 100%;
+
+    .carousel-indicators {
+        z-index: 15;
+        width: 1000px;
+        margin: 0 auto;
+        padding-right: 20px;
+        font-size: 0;
+        list-style: none;
+        text-align: right;
+
+        li {
+            display: inline-block;
+            width:  30px;
+            height: 8px;
+            margin-left: 10px;
+            background-color: #8c9cab;
+            vertical-align: middle;
+            cursor: pointer;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        .active {
+            background-color: #2a4168;
+            border: 1px solid #8c9cab;
+        }
+    }
+}
+
+// Optional captions
+// -----------------------------
+// Hidden by default for smaller viewports
+.carousel-caption {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.inner-content {
+    width: 1000px;
+    margin: 0 auto;
+}
