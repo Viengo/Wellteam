@@ -1,0 +1,35 @@
+.advantages {
+    padding: 45px 0;
+
+    h2 {
+        font-family: "Helvetica Bold";
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #181818;
+    }
+    .avail {
+        display: inline-block;
+        width: 250px;
+        margin-top: 40px;
+        padding: 10px;
+        vertical-align: top;
+        @include box-sizing(border-box);
+
+        img {
+            display: block;
+            width: 164px;
+            margin: 0 auto;
+        }
+
+        h3 {
+            margin-top: 20px;
+            font-family: "Helvetica";
+            font-size: 18px;
+            line-height: 25px;
+            text-align: center;
+            color: #181818;
+        }
+    }
+}

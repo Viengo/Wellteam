@@ -216,6 +216,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .container {
   width: 1000px;
   margin: 0 auto;
+  font-size: 0;
 }
 
 /* line 14, ../scss/lib/carousel/mixins/_clearfix.scss */
@@ -228,7 +229,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   clear: both;
 }
 
-/* line 9, ../scss/_base.scss */
+/* line 10, ../scss/_base.scss */
 a {
   font-family: "Helvetica";
   text-decoration: none;
@@ -366,4 +367,43 @@ header nav ul li.active a {
 /* line 27, ../scss/layouts/home/_slider.scss */
 .home .slider .slider-style .button-group .button:last-of-type {
   margin-top: 15px;
+}
+/* line 1, ../scss/layouts/home/_advantages.scss */
+.home .advantages {
+  padding: 45px 0;
+}
+/* line 4, ../scss/layouts/home/_advantages.scss */
+.home .advantages h2 {
+  font-family: "Helvetica Bold";
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+}
+/* line 12, ../scss/layouts/home/_advantages.scss */
+.home .advantages .avail {
+  display: inline-block;
+  width: 250px;
+  margin-top: 40px;
+  padding: 10px;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 20, ../scss/layouts/home/_advantages.scss */
+.home .advantages .avail img {
+  display: block;
+  width: 164px;
+  margin: 0 auto;
+}
+/* line 26, ../scss/layouts/home/_advantages.scss */
+.home .advantages .avail h3 {
+  margin-top: 20px;
+  font-family: "Helvetica";
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #181818;
 }
