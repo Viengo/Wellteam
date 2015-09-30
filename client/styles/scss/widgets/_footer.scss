@@ -1,0 +1,18 @@
+footer {
+    padding: 17px 0 21px;
+    border-top: 2px solid #bdc2cc;
+    background-color: #15243f;
+
+    p {
+        font-family: "Helvetica";
+        font-size: 14px;
+        color: #fff;
+
+        &:first-of-type {
+            float: left;
+        }
+        &:last-of-type {
+            float: right;
+        }
+    }
+}

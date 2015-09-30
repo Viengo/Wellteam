@@ -346,6 +346,27 @@ header nav ul li.active a {
   color: #2a4168;
 }
 
+/* line 1, ../scss/widgets/_footer.scss */
+footer {
+  padding: 17px 0 21px;
+  border-top: 2px solid #bdc2cc;
+  background-color: #15243f;
+}
+/* line 6, ../scss/widgets/_footer.scss */
+footer p {
+  font-family: "Helvetica";
+  font-size: 14px;
+  color: #fff;
+}
+/* line 11, ../scss/widgets/_footer.scss */
+footer p:first-of-type {
+  float: left;
+}
+/* line 14, ../scss/widgets/_footer.scss */
+footer p:last-of-type {
+  float: right;
+}
+
 /* line 1, ../scss/layouts/home/_slider.scss */
 .home .slider {
   overflow: hidden;
@@ -483,21 +504,10 @@ header nav ul li.active a {
 }
 /* line 60, ../scss/layouts/home/_news.scss */
 .home .news .container .article:last-of-type a {
-  position: relative;
+  text-decoration: underline;
   color: #181818;
 }
-/* line 63, ../scss/layouts/home/_news.scss */
-.home .news .container .article:last-of-type a::before {
-  content: "";
-  position: absolute;
-  bottom: 3px;
-  right: 0;
-  display: block;
-  width: 70px;
-  height: 1px;
-  background-color: #181818;
-}
-/* line 76, ../scss/layouts/home/_news.scss */
+/* line 77, ../scss/layouts/home/_news.scss */
 .home .news .container a {
   display: block;
   margin-top: 5px;

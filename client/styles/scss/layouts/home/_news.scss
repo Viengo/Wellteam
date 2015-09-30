@@ -58,18 +58,19 @@
                     padding: 45px 80px 0;
                 }
                 a {
-                    position: relative;
+//                    position: relative;
+                    text-decoration: underline;
                     color: #181818;
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        bottom: 3px;
-                        right: 0;
-                        display: block;
-                        width: 70px;
-                        height: 1px;
-                        background-color: #181818;
-                    }
+//                    &::before {
+//                        content: "";
+//                        position: absolute;
+//                        bottom: 3px;
+//                        right: 0;
+//                        display: block;
+//                        width: 70px;
+//                        height: 1px;
+//                        background-color: #181818;
+//                    }
                 }
             }
         }
