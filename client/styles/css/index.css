@@ -258,11 +258,11 @@ body h2 {
 
 @font-face {
   font-family: "Helvetica";
-  src: url('/../fonts/helvetica/Helvetica.svg?1443573588') format('svg'), url('/../fonts/helvetica/Helvetica.ttf?1443573590') format('truetype'), url('/../fonts/helvetica/Helvetica.woff?1443573592') format('woff');
+  src: url('//../fonts/helvetica/Helvetica.svg?1443573588') format('svg'), url('//../fonts/helvetica/Helvetica.ttf?1443573590') format('truetype'), url('//../fonts/helvetica/Helvetica.woff?1443573592') format('woff');
 }
 @font-face {
   font-family: "Helvetica Bold";
-  src: url('/../fonts/helvetica-bold/Helvetica-bold.otf?1443474822') format('opentype'), url('/../fonts/helvetica-bold/Helvetica-bold.svg?1443474824') format('svg'), url('/../fonts/helvetica-bold/Helvetica-bold.ttf?1443474826') format('truetype'), url('/../fonts/helvetica-bold/Helvetica-bold.woff?1443474826') format('woff');
+  src: url('//../fonts/helvetica-bold/Helvetica-bold.otf?1443474822') format('opentype'), url('//../fonts/helvetica-bold/Helvetica-bold.svg?1443474824') format('svg'), url('//../fonts/helvetica-bold/Helvetica-bold.ttf?1443474826') format('truetype'), url('//../fonts/helvetica-bold/Helvetica-bold.woff?1443474826') format('woff');
 }
 /* line 56, contact/*.png */
 .contact-sprite, .home .contacts .contact-box ul li a::before, .home .contacts .contact-box ul li:first-of-type a::before, .home .contacts .contact-box ul li:last-of-type a::before {
@@ -353,7 +353,7 @@ header nav ul {
 header nav ul li {
   border-top: 7px solid #fff;
 }
-/* line 20, ../scss/widgets/_header.scss */
+/* line 19, ../scss/widgets/_header.scss */
 header nav ul li a {
   display: block;
   font-size: 18px;
@@ -361,27 +361,27 @@ header nav ul li a {
   text-transform: uppercase;
   color: #181818;
 }
-/* line 27, ../scss/widgets/_header.scss */
+/* line 26, ../scss/widgets/_header.scss */
 header nav ul li:nth-child(-n+2) {
   float: left;
 }
-/* line 30, ../scss/widgets/_header.scss */
+/* line 29, ../scss/widgets/_header.scss */
 header nav ul li:nth-child(n+3) {
   float: right;
 }
-/* line 33, ../scss/widgets/_header.scss */
+/* line 32, ../scss/widgets/_header.scss */
 header nav ul li:nth-child(2) {
   margin-left: 130px;
 }
-/* line 36, ../scss/widgets/_header.scss */
+/* line 35, ../scss/widgets/_header.scss */
 header nav ul li:nth-child(4) {
   margin-right: 97px;
 }
-/* line 39, ../scss/widgets/_header.scss */
+/* line 38, ../scss/widgets/_header.scss */
 header nav ul li.active {
   border-top: 7px solid #2a4168;
 }
-/* line 41, ../scss/widgets/_header.scss */
+/* line 40, ../scss/widgets/_header.scss */
 header nav ul li.active a {
   color: #2a4168;
 }
