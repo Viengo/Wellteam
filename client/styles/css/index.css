@@ -258,11 +258,11 @@ body h2 {
 
 @font-face {
   font-family: "Helvetica";
-  src: url('/../../wellteam/client/fonts/helvetica/Helvetica.svg') format('svg'), url('/../../wellteam/client/fonts/helvetica/Helvetica.ttf') format('truetype'), url('/../../wellteam/client/fonts/fonts/helvetica/Helvetica.woff') format('woff');
+  src: url('/fonts/helvetica/Helvetica.svg') format('svg'), url('/fonts/helvetica/Helvetica.ttf') format('truetype'), url('/fonts/fonts/helvetica/Helvetica.woff') format('woff');
 }
 @font-face {
   font-family: "Helvetica Bold";
-  src: url('/../../wellteam/client/fonts/helvetica-bold/Helvetica-bold.otf') format('opentype'), url('/../../wellteam/client/fonts/helvetica-bold/Helvetica-bold.svg') format('svg'), url('/../../wellteam/client/fonts/helvetica-bold/Helvetica-bold.ttf') format('truetype'), url('/../../wellteam/client/fonts/helvetica-bold/Helvetica-bold.woff') format('woff');
+  src: url('/fonts/helvetica-bold/Helvetica-bold.otf') format('opentype'), url('/fonts/helvetica-bold/Helvetica-bold.svg') format('svg'), url('/fonts/helvetica-bold/Helvetica-bold.ttf') format('truetype'), url('/fonts/helvetica-bold/Helvetica-bold.woff') format('woff');
 }
 /* line 56, contact/*.png */
 .contact-sprite, .home .contacts .contact-box ul li a::before, .home .contacts .contact-box ul li:first-of-type a::before, .home .contacts .contact-box ul li:last-of-type a::before {

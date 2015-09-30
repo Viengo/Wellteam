@@ -18,3 +18,4 @@ $(document).ready(function(){
             });
     });
 });
+//fonts_dir = "../../Wellteam/client/fonts"

@@ -8,7 +8,6 @@ sass_dir = "scss"
 images_dir = "../images"
 http_generated_images_path = '../../images'
 javascripts_dir = "js"
-fonts_dir = "../../wellteam/client/fonts"
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
