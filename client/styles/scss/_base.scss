@@ -1,13 +1,17 @@
-.container {
-    width: 1000px;
-    margin: 0 auto;
-    font-size: 0;
-}
-.clearfix {
-    @include clearfix;
+body {
+    min-width: 1000px;
 
-}
-a {
-    font-family: "Helvetica";
-    text-decoration: none;
+    .container {
+        width: 1000px;
+        margin: 0 auto;
+        font-size: 0;
+    }
+    .clearfix {
+        @include clearfix;
+
+    }
+    a {
+        font-family: "Helvetica";
+        text-decoration: none;
+    }
 }

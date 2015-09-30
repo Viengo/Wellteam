@@ -213,24 +213,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 1, ../scss/_base.scss */
-.container {
+body {
+  min-width: 1000px;
+}
+/* line 4, ../scss/_base.scss */
+body .container {
   width: 1000px;
   margin: 0 auto;
   font-size: 0;
 }
-
 /* line 14, ../scss/lib/carousel/mixins/_clearfix.scss */
-.clearfix:before, .clearfix:after {
+body .clearfix:before, body .clearfix:after {
   content: " ";
   display: table;
 }
 /* line 19, ../scss/lib/carousel/mixins/_clearfix.scss */
-.clearfix:after {
+body .clearfix:after {
   clear: both;
 }
-
-/* line 10, ../scss/_base.scss */
-a {
+/* line 13, ../scss/_base.scss */
+body a {
   font-family: "Helvetica";
   text-decoration: none;
 }
@@ -243,6 +245,12 @@ a {
   font-family: "Helvetica Bold";
   src: url('/../../wellteam/client/fonts/helvetica-bold/Helvetica-bold.otf') format('opentype'), url('/../../wellteam/client/fonts/helvetica-bold/Helvetica-bold.svg') format('svg'), url('/../../wellteam/client/fonts/helvetica-bold/Helvetica-bold.ttf') format('truetype'), url('/../../wellteam/client/fonts/helvetica-bold/Helvetica-bold.woff') format('woff');
 }
+/* line 56, contact/*.png */
+.contact-sprite, .home .contacts .contact-box ul li a::before, .home .contacts .contact-box ul li:first-of-type::before, .home .contacts .contact-box ul li:last-of-type a::before {
+  background-image: url('../../images/contact-s8c398f9aba.png');
+  background-repeat: no-repeat;
+}
+
 /* line 1, ../scss/components/_button.scss */
 .button {
   display: block;
@@ -524,4 +532,106 @@ header nav ul li.active a {
 /* line 18, ../scss/layouts/home/_partners.scss */
 .home .partners ul li:first-child {
   margin-left: 0;
+}
+/* line 1, ../scss/layouts/home/_contacts.scss */
+.home .contacts {
+  padding: 35px 0;
+  font-size: 0;
+  background-color: #203354;
+  text-align: center;
+}
+/* line 7, ../scss/layouts/home/_contacts.scss */
+.home .contacts h2 {
+  font-family: "Helvetica Bold";
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+/* line 15, ../scss/layouts/home/_contacts.scss */
+.home .contacts .contact-box {
+  display: inline-block;
+  width: 200px;
+  margin-top: 5px;
+  vertical-align: top;
+}
+/* line 21, ../scss/layouts/home/_contacts.scss */
+.home .contacts .contact-box h3 {
+  padding: 15px 0;
+  font-family: "Helvetica Bold";
+  font-size: 24px;
+  border-bottom: 2px solid #fff;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+}
+/* line 31, ../scss/layouts/home/_contacts.scss */
+.home .contacts .contact-box p {
+  font-family: "Helvetica";
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  color: #fff;
+}
+/* line 37, ../scss/layouts/home/_contacts.scss */
+.home .contacts .contact-box p:first-of-type {
+  margin-top: 8px;
+}
+/* line 42, ../scss/layouts/home/_contacts.scss */
+.home .contacts .contact-box span {
+  display: block;
+  margin-top: 5px;
+  font-family: "Helvetica";
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+  color: #fff;
+}
+/* line 53, ../scss/layouts/home/_contacts.scss */
+.home .contacts .contact-box ul li {
+  margin-top: 10px;
+  text-align: left;
+}
+/* line 57, ../scss/layouts/home/_contacts.scss */
+.home .contacts .contact-box ul li a {
+  position: relative;
+  display: block;
+  padding-left: 25px;
+  font-size: 18px;
+  color: #fff;
+}
+/* line 64, ../scss/layouts/home/_contacts.scss */
+.home .contacts .contact-box ul li a::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-position: 0 -20px;
+}
+/* line 75, ../scss/layouts/home/_contacts.scss */
+.home .contacts .contact-box ul li:first-of-type {
+  text-decoration: underline;
+}
+/* line 78, ../scss/layouts/home/_contacts.scss */
+.home .contacts .contact-box ul li:first-of-type::before {
+  background-position: 0 -20px;
+}
+/* line 85, ../scss/layouts/home/_contacts.scss */
+.home .contacts .contact-box ul li:last-of-type a::before {
+  background-position: 0 0;
+}
+/* line 93, ../scss/layouts/home/_contacts.scss */
+.home .contacts .contact-box:last-child {
+  width: 210px;
+  margin-left: 70px;
+}
+/* line 98, ../scss/layouts/home/_contacts.scss */
+.home .contacts .button {
+  display: inline-block;
+  width: 191px;
+  margin: 175px 0 0 70px;
 }
