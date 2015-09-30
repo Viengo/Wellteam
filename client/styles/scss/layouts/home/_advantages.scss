@@ -2,11 +2,6 @@
     padding: 45px 0;
 
     h2 {
-        font-family: "Helvetica Bold";
-        font-size: 30px;
-        line-height: 30px;
-        text-align: center;
-        text-transform: uppercase;
         color: #181818;
     }
     .avail {
@@ -21,6 +16,7 @@
             display: block;
             width: 164px;
             margin: 0 auto;
+            @include user-select(none);
         }
 
         h3 {

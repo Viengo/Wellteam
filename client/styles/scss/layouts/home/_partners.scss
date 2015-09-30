@@ -1,11 +1,9 @@
 .partners {
     padding: 55px 0 60px;
+    @include user-select(none);
+
     h2 {
         font-family: "Helvetica";
-        font-size: 30px;
-        line-height: 30px;
-        text-align: center;
-        text-transform: uppercase;
         color: #181818;
     }
     ul {

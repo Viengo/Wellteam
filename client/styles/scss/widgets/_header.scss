@@ -1,4 +1,6 @@
 header {
+    @include user-select(none);
+
     nav {
         position: relative;
 

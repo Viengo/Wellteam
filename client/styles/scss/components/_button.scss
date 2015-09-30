@@ -4,11 +4,17 @@
     font-family: "Helvetica";
     font-size: 18px;
     text-align: center;
+    @include user-select(none);
+    @include transition-property(background-color, border);
+    @include transition-duration(300ms);
 
     &.red {
         width: 157px;
         background-color: #d51313;
         color: #fff;
+        &:hover {
+            background-color: #9f0505;
+        }
     }
     &.blue, &.white {
         width: 194px;

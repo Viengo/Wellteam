@@ -14,4 +14,19 @@ body {
         font-family: "Helvetica";
         text-decoration: none;
     }
+
+    p,span {
+        font-family: "Helvetica";
+    }
+
+    h1,h2,h3 {
+        font-family: "Helvetica Bold";
+    }
+    h2 {
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        @include user-select(none);
+    }
 }

@@ -301,14 +301,13 @@ void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?voi
 
 }(jQuery);
 
-//jQuery(document).ready(function($) {
-//    $(".royalSlider").royalSlider();
-//});
+
 $(document).ready(function(){
-$("#nav li").on("click", function(){
-    $("#nav li").removeClass("active"); //удаляем класс во всех вкладках
-    $(this).addClass("active"); //добавляем класс текущей (нажатой)
-});
+//    $("#nav li").on("click", function(){
+//        $("#nav li").removeClass("active");
+//        $(this).addClass("active");
+//    });
+
     $('.carousel').carousel();
     $(function() {
         $(".partners img")

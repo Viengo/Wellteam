@@ -1,5 +1,6 @@
 .slider {
     overflow: hidden;
+    @include user-select(none);
 
     .slider-style {
         .info-box {
