@@ -66,15 +66,24 @@
                     }
                 }
                 &:first-of-type {
-                    text-decoration: underline;
-
-                    &::before {
-                        @include contact-sprite(skype);
+                    a {
+                        &::before {
+                            @include contact-sprite(skype);
+                        }
+                        &::after {    //helvetica bugfix
+                            content: "";
+                            position: absolute;
+                            bottom: -2px;
+                            left: 26px;
+                            display: block;
+                            width: 75px;
+                            height: 1px;
+                            background-color: #fff;
+                        }
                     }
                 }
                 &:last-of-type {
                     a {
-
                         &::before {
                             @include contact-sprite(mail);
                         }

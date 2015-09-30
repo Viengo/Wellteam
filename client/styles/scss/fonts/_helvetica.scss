@@ -1,6 +1,5 @@
 @include font-face("Helvetica",
-    font-files("helvetica/helvetica.otf",
-        "helvetica/Helvetica.svg",
+    font-files("helvetica/Helvetica.svg",
         "helvetica/Helvetica.ttf",
         "fonts/helvetica/Helvetica.woff"));
 @include font-face("Helvetica Bold",

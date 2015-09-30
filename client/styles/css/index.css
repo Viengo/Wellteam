@@ -258,14 +258,14 @@ body h2 {
 
 @font-face {
   font-family: "Helvetica";
-  src: url('/../../wellteam/client/fonts/helvetica/helvetica.otf') format('opentype'), url('/../../wellteam/client/fonts/helvetica/Helvetica.svg') format('svg'), url('/../../wellteam/client/fonts/helvetica/Helvetica.ttf') format('truetype'), url('/../../wellteam/client/fonts/fonts/helvetica/Helvetica.woff') format('woff');
+  src: url('/../../wellteam/client/fonts/helvetica/Helvetica.svg') format('svg'), url('/../../wellteam/client/fonts/helvetica/Helvetica.ttf') format('truetype'), url('/../../wellteam/client/fonts/fonts/helvetica/Helvetica.woff') format('woff');
 }
 @font-face {
   font-family: "Helvetica Bold";
   src: url('/../../wellteam/client/fonts/helvetica-bold/Helvetica-bold.otf') format('opentype'), url('/../../wellteam/client/fonts/helvetica-bold/Helvetica-bold.svg') format('svg'), url('/../../wellteam/client/fonts/helvetica-bold/Helvetica-bold.ttf') format('truetype'), url('/../../wellteam/client/fonts/helvetica-bold/Helvetica-bold.woff') format('woff');
 }
 /* line 56, contact/*.png */
-.contact-sprite, .home .contacts .contact-box ul li a::before, .home .contacts .contact-box ul li:first-of-type::before, .home .contacts .contact-box ul li:last-of-type a::before {
+.contact-sprite, .home .contacts .contact-box ul li a::before, .home .contacts .contact-box ul li:first-of-type a::before, .home .contacts .contact-box ul li:last-of-type a::before {
   background-image: url('../../images/contact-s8c398f9aba.png');
   background-repeat: no-repeat;
 }
@@ -556,15 +556,17 @@ footer p:last-of-type {
 }
 /* line 55, ../scss/layouts/home/_news.scss */
 .home .news .container .article:last-of-type a {
-  text-decoration: underline;
+  display: inline-block;
+  float: right;
+  border-bottom: 1px solid #000000;
   color: #181818;
 }
-/* line 61, ../scss/layouts/home/_news.scss */
+/* line 63, ../scss/layouts/home/_news.scss */
 .home .news .container a {
   display: block;
   margin-top: 5px;
   font-size: 14px;
-  line-height: 25px;
+  line-height: 20px;
   text-align: right;
   color: #d51313;
   -webkit-user-select: none;
@@ -673,24 +675,31 @@ footer p:last-of-type {
   height: 20px;
   background-position: 0 -20px;
 }
-/* line 68, ../scss/layouts/home/_contacts.scss */
-.home .contacts .contact-box ul li:first-of-type {
-  text-decoration: underline;
-}
-/* line 71, ../scss/layouts/home/_contacts.scss */
-.home .contacts .contact-box ul li:first-of-type::before {
+/* line 70, ../scss/layouts/home/_contacts.scss */
+.home .contacts .contact-box ul li:first-of-type a::before {
   background-position: 0 -20px;
 }
-/* line 78, ../scss/layouts/home/_contacts.scss */
+/* line 73, ../scss/layouts/home/_contacts.scss */
+.home .contacts .contact-box ul li:first-of-type a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 26px;
+  display: block;
+  width: 75px;
+  height: 1px;
+  background-color: #fff;
+}
+/* line 87, ../scss/layouts/home/_contacts.scss */
 .home .contacts .contact-box ul li:last-of-type a::before {
   background-position: 0 0;
 }
-/* line 86, ../scss/layouts/home/_contacts.scss */
+/* line 95, ../scss/layouts/home/_contacts.scss */
 .home .contacts .contact-box:last-child {
   width: 210px;
   margin-left: 70px;
 }
-/* line 91, ../scss/layouts/home/_contacts.scss */
+/* line 100, ../scss/layouts/home/_contacts.scss */
 .home .contacts .button {
   display: inline-block;
   width: 191px;

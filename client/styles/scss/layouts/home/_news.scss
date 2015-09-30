@@ -53,7 +53,9 @@
                     padding: 45px 80px 0;
                 }
                 a {
-                    text-decoration: underline;
+                    display: inline-block;
+                    float:right;
+                    border-bottom: 1px solid #000000;  //helvetica bugfix
                     color: #181818;
                 }
             }
@@ -62,7 +64,7 @@
             display: block;
             margin-top: 5px;
             font-size: 14px;
-            line-height: 25px;
+            line-height: 20px;
             text-align: right;
             color: #d51313;
             @include user-select(none);
