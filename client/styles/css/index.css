@@ -407,3 +407,94 @@ header nav ul li.active a {
   text-align: center;
   color: #181818;
 }
+/* line 1, ../scss/layouts/home/_news.scss */
+.home .news {
+  background-color: #e8e8e8;
+}
+/* line 4, ../scss/layouts/home/_news.scss */
+.home .news .container {
+  padding: 45px 0 15px;
+}
+/* line 7, ../scss/layouts/home/_news.scss */
+.home .news .container h2 {
+  font-family: "Helvetica Bold";
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+}
+/* line 16, ../scss/layouts/home/_news.scss */
+.home .news .container .article {
+  font-size: 0;
+  background-color: #fff;
+}
+/* line 20, ../scss/layouts/home/_news.scss */
+.home .news .container .article .news-item {
+  display: inline-block;
+  width: 500px;
+  padding: 45px 92px 0;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 27, ../scss/layouts/home/_news.scss */
+.home .news .container .article .news-item span {
+  font-size: 14px;
+  color: #848484;
+}
+/* line 32, ../scss/layouts/home/_news.scss */
+.home .news .container .article .news-item h3 {
+  margin-top: 10px;
+  font-family: "Helvetica Bold";
+  font-size: 14px;
+  line-height: 25px;
+  color: #2a4168;
+}
+/* line 40, ../scss/layouts/home/_news.scss */
+.home .news .container .article .news-item p {
+  margin-top: 10px;
+  font-family: "Helvetica";
+  font-size: 14px;
+  line-height: 25px;
+  color: #181818;
+}
+/* line 48, ../scss/layouts/home/_news.scss */
+.home .news .container .article img {
+  display: inline-block;
+  width: 500px;
+}
+/* line 52, ../scss/layouts/home/_news.scss */
+.home .news .container .article:first-of-type {
+  margin-top: 35px;
+}
+/* line 57, ../scss/layouts/home/_news.scss */
+.home .news .container .article:last-of-type .news-item {
+  padding: 45px 80px 0;
+}
+/* line 60, ../scss/layouts/home/_news.scss */
+.home .news .container .article:last-of-type a {
+  position: relative;
+  color: #181818;
+}
+/* line 63, ../scss/layouts/home/_news.scss */
+.home .news .container .article:last-of-type a::before {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  display: block;
+  width: 70px;
+  height: 1px;
+  background-color: #181818;
+}
+/* line 76, ../scss/layouts/home/_news.scss */
+.home .news .container a {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: right;
+  color: #d51313;
+}

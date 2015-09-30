@@ -1,0 +1,85 @@
+.news {
+    background-color: #e8e8e8;
+
+    .container {
+        padding: 45px 0 15px;
+
+        h2 {
+            font-family: "Helvetica Bold";
+            font-size: 30px;
+            line-height: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #181818;
+        }
+
+        .article {
+            font-size: 0;
+            background-color: #fff;
+
+            .news-item {
+                display: inline-block;
+                width: 500px;
+                padding: 45px 92px 0;
+                vertical-align: top;
+                @include box-sizing(border-box);
+
+                span {
+                    font-size: 14px;
+                    color: #848484;
+                }
+
+                h3 {
+                    margin-top: 10px;
+                    font-family: "Helvetica Bold";
+                    font-size: 14px;
+                    line-height: 25px;
+                    color: #2a4168;
+                }
+
+                p {
+                    margin-top: 10px;
+                    font-family: "Helvetica";
+                    font-size: 14px;
+                    line-height: 25px;
+                    color: #181818;
+                }
+            }
+            img {
+                display: inline-block;
+                width: 500px;
+            }
+            &:first-of-type {
+                margin-top: 35px;
+            }
+            &:last-of-type {
+
+                .news-item {
+                    padding: 45px 80px 0;
+                }
+                a {
+                    position: relative;
+                    color: #181818;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: 3px;
+                        right: 0;
+                        display: block;
+                        width: 70px;
+                        height: 1px;
+                        background-color: #181818;
+                    }
+                }
+            }
+        }
+        a {
+            display: block;
+            margin-top: 5px;
+            font-size: 14px;
+            line-height: 25px;
+            text-align: right;
+            color: #d51313;
+        }
+    }
+}
