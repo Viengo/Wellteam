@@ -1,0 +1,23 @@
+.partners {
+    padding: 55px 0 60px;
+    h2 {
+        font-family: "Helvetica";
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #181818;
+    }
+    ul {
+        margin-top: 45px;
+        font-size: 0;
+
+         li{
+             display: inline-block;
+             margin-left: 8px;
+             &:first-child {
+                 margin-left: 0;
+             }
+         }
+    }
+}

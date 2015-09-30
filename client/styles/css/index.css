@@ -237,11 +237,11 @@ a {
 
 @font-face {
   font-family: "Helvetica";
-  src: url('/../../Wellteam/client/fonts/helvetica/helvetica.otf') format('opentype'), url('/../../Wellteam/client/fonts/helvetica/Helvetica.svg') format('svg'), url('/../../Wellteam/client/fonts/helvetica/Helvetica.ttf') format('truetype'), url('/../../Wellteam/client/fonts/fonts/helvetica/Helvetica.woff') format('woff');
+  src: url('/../../wellteam/client/fonts/helvetica/helvetica.otf') format('opentype'), url('/../../wellteam/client/fonts/helvetica/Helvetica.svg') format('svg'), url('/../../wellteam/client/fonts/helvetica/Helvetica.ttf') format('truetype'), url('/../../wellteam/client/fonts/fonts/helvetica/Helvetica.woff') format('woff');
 }
 @font-face {
   font-family: "Helvetica Bold";
-  src: url('/../../Wellteam/client/fonts/helvetica-bold/Helvetica-bold.otf') format('opentype'), url('/../../Wellteam/client/fonts/helvetica-bold/Helvetica-bold.svg') format('svg'), url('/../../Wellteam/client/fonts/helvetica-bold/Helvetica-bold.ttf') format('truetype'), url('/../../Wellteam/client/fonts/helvetica-bold/Helvetica-bold.woff') format('woff');
+  src: url('/../../wellteam/client/fonts/helvetica-bold/Helvetica-bold.otf') format('opentype'), url('/../../wellteam/client/fonts/helvetica-bold/Helvetica-bold.svg') format('svg'), url('/../../wellteam/client/fonts/helvetica-bold/Helvetica-bold.ttf') format('truetype'), url('/../../wellteam/client/fonts/helvetica-bold/Helvetica-bold.woff') format('woff');
 }
 /* line 1, ../scss/components/_button.scss */
 .button {
@@ -497,4 +497,31 @@ header nav ul li.active a {
   line-height: 25px;
   text-align: right;
   color: #d51313;
+}
+/* line 1, ../scss/layouts/home/_partners.scss */
+.home .partners {
+  padding: 55px 0 60px;
+}
+/* line 3, ../scss/layouts/home/_partners.scss */
+.home .partners h2 {
+  font-family: "Helvetica";
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+}
+/* line 11, ../scss/layouts/home/_partners.scss */
+.home .partners ul {
+  margin-top: 45px;
+  font-size: 0;
+}
+/* line 15, ../scss/layouts/home/_partners.scss */
+.home .partners ul li {
+  display: inline-block;
+  margin-left: 8px;
+}
+/* line 18, ../scss/layouts/home/_partners.scss */
+.home .partners ul li:first-child {
+  margin-left: 0;
 }
